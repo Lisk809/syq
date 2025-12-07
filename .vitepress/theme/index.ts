@@ -4,6 +4,7 @@ import type { Theme } from 'vitepress'
 import DefaultTheme from 'vitepress/theme'
 import HeroImage from '../components/HeroImage.vue'
 import MatchCard from '../components/MatchCard.vue'
+import Gitalk from '../components/Gitalk.vue'
 import './style.css'
 
 export default {
@@ -11,7 +12,8 @@ export default {
   Layout: () => {
     return h(DefaultTheme.Layout, null, {
 'home-hero-image': () => h(HeroImage),
-'home-hero-after': () => h(MatchCard)
+'home-hero-after': () => h(MatchCard),
+'doc-after': () => h(Gitalk)
     })
   },
   enhanceApp({ app, router, siteData }) {
