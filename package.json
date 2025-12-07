@@ -1,0 +1,11 @@
+{
+  "name": "syq",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Lisk",
+  "license": "MIT",
+  "dependencies": {
+    "vitepress": "^1.6.4",
+    "vue": "^3.5.25"
+  }
+}
